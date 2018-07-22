@@ -76,7 +76,12 @@
 </div>
 
 <script>
-window.onload = alert(localStorage.getItem("storageName"));
+//window.onload = alert(localStorage.getItem("storageName"));
+
+window.onload = function() {
+   var count = localStorage.getItem("countAq1");
+   alert(count);
+}
 
 	function nextPage(){
 	
@@ -88,25 +93,37 @@ window.onload = alert(localStorage.getItem("storageName"));
 		
 		if (button1.checked){
 			window.location.href = 'partAq2.html';
-			alert("1 button selected");
+			//alert("1 button selected");
+			alert(count);
 			console.log("Entered part III question A 02");
+			count = count + 1;
+			alert(count);
 			
 		}else if (button2.checked) {
 			window.location.href = 'partAq2.html';
-			alert("2 button selected");
+			//alert("2 button selected");
+			alert(count);
 			console.log("Entered part III question A 02");
+			count = count + 2;
+			
 			
 		}else if (button3.checked) {
 			window.location.href = 'partAq2.html';
-			alert("3 button selected");
+			//alert("3 button selected");
+			alert(count);
 			console.log("Entered part III question A 02");
+			count = count + 3;
+			
 			
 		}else if (button4.checked) {
 			window.location.href = 'partAq2.html';
-			alert("4 button selected");
+			//alert("4 button selected");
+			alert(count);
 			console.log("Entered part III question A 02");
-			
-		}				
+			count = count + 4;
+		}
+	localStorage.setItem("countAq1",count);		
+	alert(count);
 	}
 
 	</script>
