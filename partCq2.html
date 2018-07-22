@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Register Page</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+</head> 
+
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<a href="menu.html" data-rel="back">Home</a>
+		<!--01 kotasa ahara pilibanda danuma wimasima-->
+		<h1>III &#3482;&#3548;&#3495;&#3523;</h1>
+	</div>
+
+	<div data-role="content">	
+		<p>
+			C (2)	&&#3503;&#3515;&#3540;&#3520;&#3535;&#3495; &#3462;&#3524;&#3535;&#3515; &#3517;&#3510;&#3535;&#3503;&#3539;&#3512;&#3546;&#3503;&#3538; &#3476;&#3510;, &#3465;&#3501;&#3535; &#3462;&#3503;&#3515;&#3514;&#3545;&#3505;&#3530; &#3462;&#3524;&#3535;&#3515; &#3482;&#3536;&#3520;&#3539;&#3512; &#3523;&#3538;&#3503;&#3540; &#3482;&#3515;&#3514;&#3538;
+			
+			
+			<form>
+			
+			<label>
+				<input type="radio" name="radio-choice-0" id="choice1" value = "1" >
+				<!--prathicharathmaka ahara labadeema gana danuwathda-->
+				(i) &#3476;&#3520;&#3530;
+			</label>
+		
+			<label >
+				<input type="radio" name="radio-choice-0" id="choice2" value = "2">
+				<!--prathicharathmaka ahara labadeema gana danuwath nadda-->
+				(ii) &#3505;&#3536;&#3501;
+			</label>
+			
+			<div style="text-align : center;">
+				<img src="images/baby1.jpg" >
+			</div>	
+			
+			<div style="text-align : center;">
+				<a type="button"  class="btn btn-primary" onClick="return nextPage();">
+				<!--img src="images/baby.jpeg" ><br>
+				<!--ilaga prashnaya-->
+				&#3466;&#3525;&#3484; &#3508;&#3530;&zwj;&#3515;&#3521;&#3530;&#3505;&#3514; >>
+				</a>
+			</div>
+				
+		</form>
+
+		
+	</div>
+	
+	<!---div data-role="footer">
+		<h4>Footer content</h4>
+	</div-->
+	
+</div>
+
+<script>
+	function nextPage(){
+	
+		var button1 = document.getElementById("choice1");
+		var button2 = document.getElementById("choice2");
+
+		if (button1.checked){
+			window.location.href = 'partCq2yes.html';
+			alert("yes button selected");
+			console.log("Entered part 01 question 02");
+			
+		}else if (button2.checked) {
+			window.location.href = 'partCq3.html';
+			alert("no button selected");
+			console.log("Entered part 01 question 02");
+			
+		}		
+	}
+
+	</script>
+
+</body>
+</html>
+</html>
