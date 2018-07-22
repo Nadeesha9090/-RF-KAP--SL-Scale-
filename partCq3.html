@@ -63,6 +63,9 @@
 </div>
 
 <script>
+	var temp = localStorage.getItem("countCq1");
+	var count = parseInt(temp);
+	//alert(count);
 	function nextPage(){
 	
 		var button1 = document.getElementById("choice1");
@@ -70,15 +73,17 @@
 
 		if (button1.checked){
 			window.location.href = 'partCq3yes.html';
-			alert("yes button selected");
-			console.log("Entered part 01 question 02");
+			//alert("yes button selected");
+			//console.log("Entered part 01 question 02");
 			
 		}else if (button2.checked) {
 			window.location.href = 'partCq4.html';
-			alert("no button selected");
-			console.log("Entered part 01 question 02");
+			//alert("no button selected");
+			//console.log("Entered part 01 question 02");
 			
 		}		
+		localStorage.setItem("countCq1",count);		
+		//alert(count);
 	}
 
 	</script>
