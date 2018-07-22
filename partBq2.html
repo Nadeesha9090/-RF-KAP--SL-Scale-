@@ -64,6 +64,10 @@
 </div>
 
 <script>
+	var temp = localStorage.getItem("countBq1");
+	var count = parseInt(temp);
+	alert(count);
+	
 	function nextPage(){
 	
 		var button1 = document.getElementById("choice1");
@@ -79,7 +83,9 @@
 			alert("no button selected");
 			console.log("Entered part 01 question 02");
 			
-		}		
+		}	
+		localStorage.setItem("countBq1",count);		
+		alert(count);			
 	}
 
 	</script>

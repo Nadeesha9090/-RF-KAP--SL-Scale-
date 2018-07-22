@@ -68,10 +68,11 @@ window.onload = function() {
    //var count = prompt("Hey type something here: ");
    //localStorage.setItem("storageName",getInput);
    
-   var count = 10;
-   localStorage.setItem("countAq1",count);
+   
 }
-
+	var count = 0;
+	localStorage.setItem("countAq1",count);
+   
 	function nextPage(){
 	
 		var button1 = document.getElementById("choice1");
@@ -79,12 +80,12 @@ window.onload = function() {
 
 		if (button1.checked){
 			window.location.href = 'partAq1yes.html';
-			alert("yes button selected");
+			//alert("yes button selected");
 			console.log("Entered part 01 question 02");
 			
 		}else if (button2.checked) {
 			window.location.href = 'partAq6.html';
-			alert("no button selected");
+			//alert("no button selected");
 			console.log("Entered part 01 question 02");
 			
 		}		

@@ -77,11 +77,9 @@
 
 <script>
 //window.onload = alert(localStorage.getItem("storageName"));
-
-window.onload = function() {
-   var count = localStorage.getItem("countAq1");
+   var temp = localStorage.getItem("countAq1");
+   var count = parseInt(temp);
    alert(count);
-}
 
 	function nextPage(){
 	
@@ -92,35 +90,38 @@ window.onload = function() {
 		
 		
 		if (button1.checked){
+			count = count + 1;
 			window.location.href = 'partAq2.html';
 			//alert("1 button selected");
-			alert(count);
-			console.log("Entered part III question A 02");
-			count = count + 1;
-			alert(count);
+			//console.log("Entered part III question A 02");
+			
+			
 			
 		}else if (button2.checked) {
-			window.location.href = 'partAq2.html';
 			//alert("2 button selected");
-			alert(count);
-			console.log("Entered part III question A 02");
+			//alert(count);
 			count = count + 2;
+			window.location.href = 'partAq2.html';
+			//console.log("Entered part III question A 02");
+			
 			
 			
 		}else if (button3.checked) {
-			window.location.href = 'partAq2.html';
 			//alert("3 button selected");
-			alert(count);
-			console.log("Entered part III question A 02");
+			//alert(count);
 			count = count + 3;
+			window.location.href = 'partAq2.html';
+			//console.log("Entered part III question A 02");
+			
 			
 			
 		}else if (button4.checked) {
-			window.location.href = 'partAq2.html';
 			//alert("4 button selected");
-			alert(count);
-			console.log("Entered part III question A 02");
 			count = count + 4;
+			//alert(count);
+			window.location.href = 'partAq2.html';
+			//console.log("Entered part III question A 02");
+			
 		}
 	localStorage.setItem("countAq1",count);		
 	alert(count);
