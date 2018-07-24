@@ -62,6 +62,19 @@
 					<q id = "Ctext"></q>
 				</div>
 				
+				<fieldset data-role="fieldcontain"> 
+					<label for="A">Step A:</label>
+					<input type="text" name="textA" id="textA" >
+				</fieldset>
+				<fieldset data-role="fieldcontain"> 
+					<label for="B">Step B:</label>
+					<input type="text" name="textB" id="textB" >
+				</fieldset>
+				<fieldset data-role="fieldcontain"> 
+					<label for="C">Step C:</label>
+					<input type="text" name="textC" id="textC" >
+				</fieldset>
+				
 			
 				<br>
 		</form>
@@ -73,12 +86,37 @@
 	
 </div>
 <script>
+
+	var tempA = localStorage.getItem("countAq1");
+	var tempB = localStorage.getItem("countBq1");
+	var tempC = localStorage.getItem("countCq1");
+	
+	var countA = parseFloat(tempA);
+	var countB = parseFloat(tempB);
+	var countC = parseFloat(tempC);
+	
+	var scaleA = countA/9;
+	var scaleB = countB/2;
+	var scaleC = countC/6
+	var total = countA+countB+countC;
+	var scaletotal = total/17;
+	
+	var a = document.getElementById("textA");
+	a.value = scaleA;
+	
+	var b = document.getElementById("textB");
+	b.value = scaleB;
+	
+	var c = document.getElementById("textC");
+	c.value = scaleC;
+	
+
 	
 	
-	var a = localStorage.getItem("scaleA",scaleA);
-	var b = localStorage.getItem("scaleB",scaleB);
-	var c = localStorage.getItem("scaleC",scaleC);
-	var abc = localStorage.getItem("scaleTotal",scaleTotal);
+	var a = scaleA;
+	var b = scaleB;
+	var c = scaleC;
+	var abc = scaletotal;
 	//var abc = 3.5;
 	//var a = 3;
 	
