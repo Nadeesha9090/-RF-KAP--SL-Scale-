@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<title>Scale</title> 
+	<title>Part A</title> 
 	<link rel="stylesheet" href="css/jquery.mobile-1.1.1.min.css" />
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/jquery.mobile-1.1.1.min.js"></script>
@@ -15,33 +15,22 @@
 <div data-role="page">
 
 	<div data-role="header">
-		<a href="menu.html" data-rel="back">Home</a>
+		<a href="index.html" data-rel="back">Home</a>
 		<!--01 kotasa ahara pilibanda danuma wimasima-->
 		<h1>&#3508;&#3538;&#3514;&#3520;&#3515; 1</h1>
 	</div>
 
 	<div data-role="content">	
 		<p>
-			Q - A1	&#3476;&#3510; &#3520;&#3538;&#3523;&#3538;&#3505;&#3530; &#3503;&#3515;&#3540;&#3520;&#3535;&#3495; &#3462;&#3524;&#3535;&#3515; &#3517;&#3510;&#3535;&#3503;&#3539;&#3512; &#3501;&#3549;&#3515;&#3535;&#3484;&#3501;&#3530; &#3473;&#3482;&#3530; &#3505;&#3538;&#3521;&#3530;&#3488;&#3538;&#3501; &#3523;&#3530;&#3502;&#3535;&#3505;&#3514;&#3482;&#3503;&#3539; &#3523;&#3538;&#3503;&#3540; &#3482;&#3515;&#3514;&#3538;. (&#3467;&#3503;&#3535;&#3524;&#3515;&#3499; - &#3508;&#3536;&#3503;&#3540;&#3515;&#3482;&#3530; &#3512;&#3501;&#3517; &#3508;&#3540;&#3495;&#3540;&#3520;&#3482; &#3520;&#3535;&#3497;&#3538;&#3520;&#3539;&#3517;
-&#3523;&#3545;&#3517;&#3530;&#3517;&#3512;&#3530; &#3484;&#3545;&#3514; &#3501;&#3540;&#3517; &#3462;&#3503;&#3539;)
+			&#3508;&#3538;&#3514;&#3520;&#3515; 1 - &#3503;&#3515;&#3540;&#3520;&#3535;&#3495; &#3462;&#3524;&#3535;&#3515; &#3482;&#3536;&#3520;&#3539;&#3512; &#3523;&#3503;&#3524;&#3535; &#3508;&#3530;&zwj;&#3515;&#3523;&#3505;&#3530;&#3505;, &#3523;&#3550;&#3483;&#3530;&zwj;&#3514;&#3523;&#3512;&#3530;&#3508;&#3505;&#3530;&#3505; &#3508;&#3515;&#3538;&#3523;&#3515;&#3514;&#3482;&#3530;&zwnj; &#3505;&#3538;&#3515;&#3530;&#3512;&#3535;&#3499;&#3514; &#3482;&#3538;&#3515;&#3539;&#3512;
+		</p>
 		<br>
 		
 		<form>
 			
-			<label>
-				<input type="radio" name="radio-choice-0" id="choice1" value = "1" >
-				<!--prathicharathmaka ahara labadeema gana danuwathda-->
-				(i) &#3476;&#3520;&#3530;
-			</label>
-		
-			<label >
-				<input type="radio" name="radio-choice-0" id="choice2" value = "2">
-				<!--prathicharathmaka ahara labadeema gana danuwath nadda-->
-				(ii) &#3505;&#3536;&#3501;
-			</label>
 			
 			<div style="text-align : center;">
-				<img src="images/baby1.jpg" >
+				<img src="images/partA.jpg" >
 			</div>	
 			
 			<div style="text-align : center;">
@@ -51,6 +40,8 @@
 				&#3466;&#3525;&#3484; &#3508;&#3530;&zwj;&#3515;&#3521;&#3530;&#3505;&#3514; >>
 				</a>
 			</div>
+			
+
 				
 		</form>
 
@@ -64,31 +55,9 @@
 </div>
 
 <script>
-window.onload = function() {
-   //var count = prompt("Hey type something here: ");
-   //localStorage.setItem("storageName",getInput);
-   
-   
-}
-	var count = 0;
-	localStorage.setItem("countAq1",count);
    
 	function nextPage(){
-	
-		var button1 = document.getElementById("choice1");
-		var button2 = document.getElementById("choice2");
-
-		if (button1.checked){
-			window.location.href = 'partAq1yes.html';
-			//alert("yes button selected");
-			console.log("Entered part 01 question 02");
-			
-		}else if (button2.checked) {
-			window.location.href = 'partAq6.html';
-			//alert("no button selected");
-			console.log("Entered part 01 question 02");
-			
-		}		
+		window.location.href = 'partAq1.html';
 	}
 
 	</script>
