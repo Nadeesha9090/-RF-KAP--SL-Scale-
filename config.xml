@@ -19,7 +19,7 @@
 
     <icon src="icons/baby.jpg" />
 	  <allow-intent href="http://*/*" />
-	  <allow-intent href="https://*/*" />
+	  <allow-intent href="http://responsivefoodfeedingsrilanka.blogspot.com/" />
 	  <allow-intent href="tel:*" />
 	  <allow-intent href="sms:*" />
 	  <allow-intent href="mailto:*" />
