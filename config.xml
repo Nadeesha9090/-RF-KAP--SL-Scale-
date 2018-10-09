@@ -18,5 +18,11 @@
     </author>
 
     <icon src="icons/baby.jpg" />
+	  <allow-intent href="http://*/*" />
+	  <allow-intent href="https://*/*" />
+	  <allow-intent href="tel:*" />
+	  <allow-intent href="sms:*" />
+	  <allow-intent href="mailto:*" />
+	  <allow-intent href="geo:*" />
 
 </widget>
