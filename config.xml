@@ -18,9 +18,9 @@
     </author>
 	
 		  
-	<feature name="InAppBrowser">
-		<param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-	</feature>
+	<engine name="android" spec="~6.3.0" />
+    <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~2.0.2" />
+    <preference name="phonegap-version" value="cli-8.0.0" />
 
     <icon src="icons/baby.jpg" />
 	  <allow-intent href="http://*/*" />
