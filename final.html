@@ -79,7 +79,12 @@
 				</a>
 		</div>
 		
-		<a href="#" onclick="window.open('http://www.kidzout.com', '_system'); return false;">www.kidzout.com</a>
+		 <a href="#" onclick="openUrl('http://www.google.com/'); return false;">Link test 1</a>
+		 <br>
+		<a href="#" onclick="window.open('http://www.google.com/', '_system', 'location=yes'); return false;">Test link 2</a>
+		<br>
+		<a href="#" onclick="window.open('https://www.google.com/', '_system', 'location=yes');" >Google</a>
+
 		
 		
 	
@@ -98,14 +103,20 @@
 
 
 		
-		
+<script src="cordova.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() {
-    var url;
-    url = $("a").attr('href');
-    $("a").attr("onclick", "window.open('"+"http://responsivefoodfeedingsrilanka.blogspot.com/"+"'); return false;");
-  });
-</script>
+    function openUrl(url) {
+      alert("open url: " + url);
+      window.open(url, '_blank', 'location=yes');
+    }
+
+    function onDeviceReady() {
+      alert('device ready!');
+    }
+    $(function() {
+        document.addEventListener("deviceready", onDeviceReady, true);
+    });
+  </script>
 
 
 </body>
