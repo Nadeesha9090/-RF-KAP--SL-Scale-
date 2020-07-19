@@ -76,6 +76,10 @@
 </div>
 
 <script>
+
+	var count = 0;
+	localStorage.setItem("countCq1",count);
+	
 	var temp = localStorage.getItem("countCq1");
 	var count = parseInt(temp);
 	//alert(count);
@@ -91,25 +95,25 @@
 		
 		if (button1.checked){
 			count = count +4;
-			window.location.href = 'partCq2.html';
+			//window.location.href = 'partCq2.html';
 			//alert("1 button selected");
 			//console.log("Entered part III question A 02");
 			
 		}else if (button2.checked) {
 			count = count +3;
-			window.location.href = 'partCq2.html';
+			//window.location.href = 'partCq2.html';
 			//alert("2 button selected");
 			//console.log("Entered part III question A 02");
 			
 		}else if (button3.checked) {
 			count = count +2;
-			window.location.href = 'partCq2.html';
+			//window.location.href = 'partCq2.html';
 			//alert("3 button selected");
 			//console.log("Entered part III question A 02");
 			
 		}else if (button4.checked) {
 			count = count +1;
-			window.location.href = 'partCq2.html';
+			//window.location.href = 'partCq2.html';
 			//alert("4 button selected");
 			//console.log("Entered part III question A 02");
 			

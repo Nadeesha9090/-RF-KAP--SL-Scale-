@@ -13,7 +13,7 @@
 </head> 
 
 <body> 
-
+<p id="para2"></p>
 <div data-role="page">
 
 	<div data-role="header">
@@ -32,24 +32,16 @@
 					<img id="totalColor" src="" />
 					<br-->
 					<p> &#3517;&#3510;&#3535;&#3484;&#3501;&#3530; &#3517;&#3482;&#3540;&#3499;&#3540; (Score)</p>
-					<b><text id = "totaltextvalue" ></text></b>
+					<b><text id = "totaltextvalue"></text></b>
 					<br>
-					<text id = "totaldis"></text>
+					<p id="para"></p>
 					
-					<p> Part A</p>
-					<b><text id = "Atextvalue" ></text></b>
+					<p> Range</p>
+					<b><text id = "Rangevalue" ></text></b>
 					<br>
-					<text id = "secA"></text>
+					<p id="para2"></p>
 					
-					<p> Part B</p>
-					<b><text id = "Atextvalue" ></text></b>
-					<br>
-					<text id = "secB"></text>
 					
-					<p> Part C</p>
-					<b><text id = "Atextvalue" ></text></b>
-					<br>
-					<text id = "secC"></text>
 					
 					
 				</div>
@@ -112,8 +104,12 @@
 	</div>
 	
 </div>
-<script>
 
+	
+</div>
+</body>
+
+<script>
 	var tempA = localStorage.getItem("countAq1");
 	var tempB = localStorage.getItem("countBq1");
 	var tempC = localStorage.getItem("countCq1");
@@ -125,34 +121,22 @@
 	var scaleA = countA/7;
 	var scaleB = countB/2;
 	var scaleC = countC/6;
-	var total = countA+countB+countC;
+	var total = countA + countB + countC;
+	var totfloat = parseFloat(total);
 	var scaletotal = total/15;
 	
-	var t = document.getElementById("totaltextvalue");
-	t.value = scaletotal;
+	alert(totfloat);
+	document.getElementById("para").value =totfloat.toString();;
+	//t.value = totfloat;
+	//alert(scaletotal);
 	
-	var a = document.getElementById("secA");
-	a.value = scaleA;
-	
-	var b = document.getElementById("secB");
-	b.value = scaleB;
-	
-	var c = document.getElementById("secC");
-	c.value = scaleC;
-	
-	
+	var r = document.getElementById("para2").value = scaletotal.toString();;
+	//r.value = scaletotal;
 		
 		function nextPage(){
 		window.location.href = 'final.html';
 	}
 	
 	///Last modified 19/07/2020
-	
-	</script>
-	
-</div>
-</body>
-
-
 </script>
 </html>
