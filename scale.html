@@ -32,14 +32,11 @@
 					<img id="totalColor" src="" />
 					<br-->
 					<p> &#3517;&#3510;&#3535;&#3484;&#3501;&#3530; &#3517;&#3482;&#3540;&#3499;&#3540; (Score)</p>
-					<b><text id = "totaltextvalue"></text></b>
-					<br>
 					<p id="para"></p>
 					
-					<p> Range</p>
-					<b><text id = "Rangevalue" ></text></b>
 					<br>
-					<p id="para2"></p>
+					<p> Range</p>
+					<p id="paras"></p>
 					
 					
 					
@@ -124,13 +121,15 @@
 	var total = countA + countB + countC;
 	var totfloat = parseFloat(total);
 	var scaletotal = total/15;
+	var print = Number( (scaletotal).toFixed(2) )
 	
 	alert(totfloat);
-	document.getElementById("para").value =totfloat.toString();;
+	document.getElementById("paras").innerHTML = print.toString();
+	document.getElementById("para").innerHTML =totfloat.toString();
 	//t.value = totfloat;
-	//alert(scaletotal);
+	alert(print);
 	
-	var r = document.getElementById("para2").value = scaletotal.toString();;
+	document.getElementById("para2").innerHTML = scaletotal.toString();
 	//r.value = scaletotal;
 		
 		function nextPage(){
