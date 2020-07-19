@@ -55,11 +55,11 @@
 			
 			
 			<div style="text-align : center;">
-				<a type="button"  class="btn btn-primary" onClick="return nextPage();">
+				<button   class="btn btn-primary" onClick="nextPage();">
 				<!--img src="images/baby.jpeg" ><br>
 				<!--ilaga prashnaya-->
 				&#3466;&#3525;&#3484; &#3508;&#3530;&zwj;&#3515;&#3521;&#3530;&#3505;&#3514; >>
-				</a>
+				</button>
 			</div>
 				
 		</form>
@@ -112,13 +112,8 @@
 			//console.log("Entered part III question A 02");
 			
 		}
-		}else if (button5.checked) {
-			count = count +0;
-			window.location.href = 'partC.html';
-			//alert("4 button selected");
-			//console.log("Entered part III question A 02");
-			
-		}		
+		
+		window.location.href = 'partC.html';	
 		localStorage.setItem("countBq1",count);		
 		//alert(count);			
 	}

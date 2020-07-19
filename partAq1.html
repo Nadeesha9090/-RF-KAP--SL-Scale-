@@ -10,64 +10,7 @@
 	<script src="js/jquery.mobile-1.1.1.min.js"></script>
 </head> 
 
-<script>
-//window.onload = alert(localStorage.getItem("storageName"));
-   var temp = localStorage.getItem("countAq1");
-   var count = parseInt(temp);
-  // alert(count);
 
-	function nextPage(){
-	
-		var button1 = document.getElementById("choice1");
-		var button2 = document.getElementById("choice2");
-		var button3 = document.getElementById("choice3");
-		var button4 = document.getElementById("choice4");
-		var button5 = document.getElementById("choice5");
-		
-		
-		if (button1.checked){
-			count = count + 4;
-			//window.location.href = 'partAq2.html';
-			//alert("1 button selected");
-			//console.log("Entered part III question A 02");
-			
-		}else if (button2.checked) {
-			//alert("2 button selected");
-			//alert(count);
-			count = count + 3;
-			//window.location.href = 'partAq2.html';
-			//console.log("Entered part III question A 02");
-			
-		}else if (button3.checked) {
-			//alert("3 button selected");
-			//alert(count);
-			count = count + 2;
-			//window.location.href = 'partAq2.html';
-			//console.log("Entered part III question A 02");
-			
-		}else if (button4.checked) {
-			//alert("4 button selected");
-			count = count + 1;
-			//alert(count);
-			//window.location.href = 'partAq2.html';
-			//console.log("Entered part III question A 02");
-		
-		}else(button5.checked) {
-			//alert("4 button selected");
-			count = count + 0;
-			//alert(count);
-			//window.location.href = 'partAq2.html';
-			//console.log("Entered part III question A 02");
-			
-		}
-		localStorage.setItem("countAq1",count);		
-		window.location.href = 'partAq2.html';
-		//alert(count);
-	}
-	
-
-	</script>
-	
 <body> 
 
 <div data-role="page">
@@ -121,11 +64,11 @@
 			
 			
 			<div style="text-align : center;">
-				<a type="button"  class="btn btn-primary" onClick="return nextPage();">
+				<button   class="btn btn-primary" onClick="nextPage();">
 				<!--img src="images/baby.jpeg" ><br>
 				<!--ilaga prashnaya-->
 				&#3466;&#3525;&#3484; &#3508;&#3530;&zwj;&#3515;&#3521;&#3530;&#3505;&#3514; >>
-				</a>
+				</button>
 			</div>
 				
 		</form>
@@ -142,4 +85,54 @@
 
 
 </body>
+<script>
+//window.onload = alert(localStorage.getItem("storageName"));
+   var temp = localStorage.getItem("countAq1");
+   var count = parseInt(temp);
+  // alert(count);
+
+	function nextPage(){
+	
+		var button1 = document.getElementById("choice1");
+		var button2 = document.getElementById("choice2");
+		var button3 = document.getElementById("choice3");
+		var button4 = document.getElementById("choice4");
+		var button5 = document.getElementById("choice5");
+		
+		
+		if (button1.checked){
+			count = count + 4;
+			//window.location.href = 'partAq2.html';
+			//alert("1 button selected");
+			//console.log("Entered part III question A 02");
+			
+		}else if (button2.checked) {
+			//alert("2 button selected");
+			//alert(count);
+			count = count + 3;
+			//window.location.href = 'partAq2.html';
+			//console.log("Entered part III question A 02");
+			
+		}else if (button3.checked) {
+			//alert("3 button selected");
+			//alert(count);
+			count = count + 2;
+			//window.location.href = 'partAq2.html';
+			//console.log("Entered part III question A 02");
+			
+		}else if (button4.checked) {
+			//alert("4 button selected");
+			count = count + 1;
+			//alert(count);
+			//window.location.href = 'partAq2.html';
+			//console.log("Entered part III question A 02");
+		}
+		
+		localStorage.setItem("countAq1",count);		
+		window.location.href = 'partAq2.html';
+		//alert(count);
+	}
+	
+</script>
+	
 </html>

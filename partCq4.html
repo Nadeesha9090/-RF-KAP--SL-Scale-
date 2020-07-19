@@ -58,11 +58,11 @@
 			
 			
 			<div style="text-align : center;">
-				<a type="button"  class="btn btn-primary" onClick="return nextPage();">
+				<button   class="btn btn-primary" onClick="nextPage();">
 				<!--img src="images/baby.jpeg" ><br>
 				<!--ilaga prashnaya-->
 				&#3466;&#3525;&#3484; &#3508;&#3530;&zwj;&#3515;&#3521;&#3530;&#3505;&#3514; >>
-				</a>
+				</button>
 			</div>
 				
 		</form>
@@ -92,36 +92,31 @@
 		
 		if (button1.checked){
 			count = count+4;
-			window.location.href = 'partCq5.html';
+			//window.location.href = 'partCq5.html';
 			//alert("1 button selected");
 			//console.log("Entered part III question A 02");
 			
 		}else if (button2.checked) {
 			count = count +3;
-			window.location.href = 'partCq5.html';
+			//window.location.href = 'partCq5.html';
 			//alert("2 button selected");
 			//console.log("Entered part III question A 02");
 			
 		}else if (button3.checked) {
 			count = count +2;
-			window.location.href = 'partCq5.html';
+			//window.location.href = 'partCq5.html';
 			//alert("3 button selected");
 			//console.log("Entered part III question A 02");
 			
 		}else if (button4.checked) {
 			count = count +1;
-			window.location.href = 'partCq5.html';
+			//window.location.href = 'partCq5.html';
 			//alert("4 button selected");
 			//console.log("Entered part III question A 02");
 			
 		}	
-		}else if (button5.checked) {
-			count = count +0;
-			window.location.href = 'partCq5.html';
-			//alert("4 button selected");
-			//console.log("Entered part III question A 02");
-			
-		}	
+		
+		window.location.href = 'partCq5.html';
 		localStorage.setItem("countCq1",count);		
 		//alert(count);		
 	}
