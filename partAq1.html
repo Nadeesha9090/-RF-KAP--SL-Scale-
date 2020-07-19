@@ -9,7 +9,6 @@
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/jquery.mobile-1.1.1.min.js"></script>
 </head> 
-
 <body> 
 
 <div data-role="page">
@@ -22,26 +21,44 @@
 
 	<div data-role="content">	
 		<p>
-			Q - A1	&#3476;&#3510; &#3520;&#3538;&#3523;&#3538;&#3505;&#3530; &#3503;&#3515;&#3540;&#3520;&#3535;&#3495; &#3462;&#3524;&#3535;&#3515; &#3517;&#3510;&#3535;&#3503;&#3539;&#3512; &#3501;&#3549;&#3515;&#3535;&#3484;&#3501;&#3530; &#3473;&#3482;&#3530; &#3505;&#3538;&#3521;&#3530;&#3488;&#3538;&#3501; &#3523;&#3530;&#3502;&#3535;&#3505;&#3514;&#3482;&#3503;&#3539; &#3523;&#3538;&#3503;&#3540; &#3482;&#3515;&#3514;&#3538;. (&#3467;&#3503;&#3535;&#3524;&#3515;&#3499; - &#3508;&#3536;&#3503;&#3540;&#3515;&#3482;&#3530; &#3512;&#3501;, &#3508;&#3540;&#3495;&#3540;&#3520;&#3482; &#3520;&#3535;&#3497;&#3538;&#3520;&#3539;,
+		Q - A1	&#3476;&#3510; &#3520;&#3538;&#3523;&#3538;&#3505;&#3530; &#3503;&#3515;&#3540;&#3520;&#3535;&#3495; &#3462;&#3524;&#3535;&#3515; &#3517;&#3510;&#3535;&#3503;&#3539;&#3512; &#3501;&#3549;&#3515;&#3535;&#3484;&#3501;&#3530; &#3473;&#3482;&#3530; &#3505;&#3538;&#3521;&#3530;&#3488;&#3538;&#3501; &#3523;&#3530;&#3502;&#3535;&#3505;&#3514;&#3482;&#3503;&#3539; &#3523;&#3538;&#3503;&#3540; &#3482;&#3515;&#3514;&#3538;. (&#3467;&#3503;&#3535;&#3524;&#3515;&#3499; - &#3508;&#3536;&#3503;&#3540;&#3515;&#3482;&#3530; &#3512;&#3501;, &#3508;&#3540;&#3495;&#3540;&#3520;&#3482; &#3520;&#3535;&#3497;&#3538;&#3520;&#3539;,
 &#3523;&#3545;&#3517;&#3530;&#3517;&#3512;&#3530; &#3484;&#3545;&#3514; &#3501;&#3540;&#3517; &#3462;&#3503;&#3539;)
 			
 			
-			
-			<br>
+		
+		<br>
 		
 		<form>
 			
 			<label>
-				<input type="radio" name="radio-choice-0" id="choice1" value = "1" >
-				<!--prathicharathmaka ahara labadeema gana danuwathda-->
-				(i) &#3476;&#3520;&#3530;
+				<input type="radio" name="radio-choice-0" id="choice1" value = "4" >
+				<!--ithama kalathurakin-->
+				(i) &#3523;&#3536;&#3512;&#3520;&#3538;&#3495;&#3512;
 			</label>
 		
 			<label >
-				<input type="radio" name="radio-choice-0" id="choice2" value = "2">
-				<!--prathicharathmaka ahara labadeema gana danuwath nadda-->
-				(ii) &#3505;&#3536;&#3501;
+				<input type="radio" name="radio-choice-0" id="choice2" value = "3">
+				<!--kalathurakin-->
+				(ii) &#3510;&#3548;&#3524;&#3549;&#3520;&#3538;&#3495;
 			</label>
+			
+			<label >
+				<input type="radio" name="radio-choice-0" id="choice3" value = "2">
+				<!--bohowita-->
+				(iii) &#3482;&#3517;&#3535;&#3501;&#3540;&#3515;&#3482;&#3538;&#3505;&#3530;
+			</label>
+			
+			<label >
+				<input type="radio" name="radio-choice-0" id="choice4" value = "1">
+				<!--samawitama-->
+				(iv) &#3465;&#3501;&#3535;&#3512;&#3501;&#3530; &#3482;&#3517;&#3535;&#3501;&#3540;&#3515;&#3482;&#3538;&#3505;&#3530;
+			</label>
+			<label >
+				<input type="radio" name="radio-choice-0" id="choice5" value = "0">
+				<!--prathicharathmaka ahara labadeema gana danuwath nadda-->
+				(v) &#3505;&#3536;&#3501;
+			</label>
+			
 			
 			
 			<div style="text-align : center;">
@@ -64,31 +81,65 @@
 </div>
 
 <script>
-window.onload = function() {
-   //var count = prompt("Hey type something here: ");
-   //localStorage.setItem("storageName",getInput);
-   
-   
-}
-	var count = 0;
-	localStorage.setItem("countAq1",count);
-   
+//window.onload = alert(localStorage.getItem("storageName"));
+   var temp = localStorage.getItem("countAq1");
+   var count = parseInt(temp);
+  // alert(count);
+
 	function nextPage(){
 	
 		var button1 = document.getElementById("choice1");
 		var button2 = document.getElementById("choice2");
-
+		var button3 = document.getElementById("choice3");
+		var button4 = document.getElementById("choice4");
+		var button5 = document.getElementById("choice5");
+		
+		
 		if (button1.checked){
-			window.location.href = 'partAq1yes.html';
-			//alert("yes button selected");
-			console.log("Entered part 01 question 02");
+			count = count + 4;
+			window.location.href = 'partAq2.html';
+			//alert("1 button selected");
+			//console.log("Entered part III question A 02");
+			
+			
 			
 		}else if (button2.checked) {
-			window.location.href = 'partAq6.html';
-			//alert("no button selected");
-			console.log("Entered part 01 question 02");
+			//alert("2 button selected");
+			//alert(count);
+			count = count + 3;
+			window.location.href = 'partAq2.html';
+			//console.log("Entered part III question A 02");
 			
-		}		
+			
+			
+		}else if (button3.checked) {
+			//alert("3 button selected");
+			//alert(count);
+			count = count + 2;
+			window.location.href = 'partAq2.html';
+			//console.log("Entered part III question A 02");
+			
+			
+			
+		}else if (button4.checked) {
+			//alert("4 button selected");
+			count = count + 1;
+			//alert(count);
+			window.location.href = 'partAq2.html';
+			//console.log("Entered part III question A 02");
+			
+		}
+		
+		}else if (button5.checked) {
+			//alert("4 button selected");
+			count = count + 0;
+			//alert(count);
+			window.location.href = 'partAq2.html';
+			//console.log("Entered part III question A 02");
+			
+		}
+	localStorage.setItem("countAq1",count);		
+	//alert(count);
 	}
 
 	</script>

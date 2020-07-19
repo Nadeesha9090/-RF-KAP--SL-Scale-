@@ -25,20 +25,36 @@
 		Q - C4	&#3503;&#3515;&#3540;&#3520;&#3535;&#3495; &#3462;&#3524;&#3535;&#3515; &#3517;&#3510;&#3535;&#3503;&#3539;&#3512;&#3546;&#3503;&#3538; &#3476;&#3510;, &#3503;&#3515;&#3540;&#3520;&#3535; &#3523;&#3512;&#3487; &#3523;&#3458;&#3520;&#3535;&#3503;&#3514;&#3482;&#3530; &#3484;&#3548;&#3497;&#3505;&#3487;&#3535; &#3484;&#3505;&#3538;&#3512;&#3538;&#3505;&#3530; &#3503;&#3515;&#3540;&#3520;&#3535;&#3484;&#3546; &#3463;&#3523;&#3495; &#3463;&#3523; &#3514;&#3548;&#3512;&#3512;&#3538;&#3505;&#3530; &#3462;&#3503;&#3515;&#3514;
 &#3503;&#3536;&#3505;&#3545;&#3505; &#3508;&#3515;&#3538;&#3503;&#3538; &#3462;&#3524;&#3535;&#3515; &#3482;&#3536;&#3520;&#3539;&#3512; &#3523;&#3538;&#3503;&#3540; &#3482;&#3515;&#3514;&#3538;.
 
-			
-			<form>
-			
+		<form>
 			<label>
-				<input type="radio" name="radio-choice-0" id="choice1" value = "1" >
-				<!--prathicharathmaka ahara labadeema gana danuwathda-->
-				(i) &#3476;&#3520;&#3530;
+				<input type="radio" name="radio-choice-0" id="choice1" value = "4" >
+				<!--ithama kalathurakin-->
+				(i) &#3523;&#3536;&#3512;&#3520;&#3538;&#3495;&#3512;
 			</label>
 		
 			<label >
-				<input type="radio" name="radio-choice-0" id="choice2" value = "2">
-				<!--prathicharathmaka ahara labadeema gana danuwath nadda-->
-				(ii) &#3505;&#3536;&#3501;
+				<input type="radio" name="radio-choice-0" id="choice2" value = "3">
+				<!--kalathurakin-->
+				(ii) &#3510;&#3548;&#3524;&#3549;&#3520;&#3538;&#3495;
 			</label>
+			
+			<label >
+				<input type="radio" name="radio-choice-0" id="choice3" value = "2">
+				<!--bohowita-->
+				(iii) &#3482;&#3517;&#3535;&#3501;&#3540;&#3515;&#3482;&#3538;&#3505;&#3530;
+			</label>
+			
+			<label >
+				<input type="radio" name="radio-choice-0" id="choice4" value = "1">
+				<!--samawitama-->
+				(iv) &#3465;&#3501;&#3535;&#3512;&#3501;&#3530; &#3482;&#3517;&#3535;&#3501;&#3540;&#3515;&#3482;&#3538;&#3505;&#3530;
+			</label>
+			<label >
+				<input type="radio" name="radio-choice-0" id="choice5" value = "0">
+				<!--prathicharathmaka ahara labadeema gana danuwath nadda-->
+				(v) &#3505;&#3536;&#3501;
+			</label>
+			
 			
 			
 			<div style="text-align : center;">
@@ -69,16 +85,41 @@
 	
 		var button1 = document.getElementById("choice1");
 		var button2 = document.getElementById("choice2");
-
+		var button3 = document.getElementById("choice3");
+		var button4 = document.getElementById("choice4");
+		var button5 = document.getElementById("choice5");
+		
+		
 		if (button1.checked){
-			window.location.href = 'partCq4yes.html';
-			//alert("yes button selected");
-			//console.log("Entered part 01 question 02");
+			count = count+4;
+			window.location.href = 'partCq5.html';
+			//alert("1 button selected");
+			//console.log("Entered part III question A 02");
 			
 		}else if (button2.checked) {
+			count = count +3;
 			window.location.href = 'partCq5.html';
-			//alert("no button selected");
-			//console.log("Entered part 01 question 02");
+			//alert("2 button selected");
+			//console.log("Entered part III question A 02");
+			
+		}else if (button3.checked) {
+			count = count +2;
+			window.location.href = 'partCq5.html';
+			//alert("3 button selected");
+			//console.log("Entered part III question A 02");
+			
+		}else if (button4.checked) {
+			count = count +1;
+			window.location.href = 'partCq5.html';
+			//alert("4 button selected");
+			//console.log("Entered part III question A 02");
+			
+		}	
+		}else if (button5.checked) {
+			count = count +0;
+			window.location.href = 'partCq5.html';
+			//alert("4 button selected");
+			//console.log("Entered part III question A 02");
 			
 		}	
 		localStorage.setItem("countCq1",count);		
@@ -88,5 +129,4 @@
 	</script>
 
 </body>
-</html>
 </html>
