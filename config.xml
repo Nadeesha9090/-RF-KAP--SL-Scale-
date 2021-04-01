@@ -28,6 +28,10 @@
 	<engine name="android" spec="~6.3.0" />
     <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~2.0.2" />
     <preference name="phonegap-version" value="cli-8.0.0" />
+	
+	<platform name="android">
+		<icon density="ldpi" src="icons/baby.jpg"/>
+	<platform name="android">
 
     <icon src="icons/baby.jpg" />
 	  <allow-intent href="http://*/*" />

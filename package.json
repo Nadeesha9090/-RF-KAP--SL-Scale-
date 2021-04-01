@@ -1,0 +1,16 @@
+{
+  "name": "RFPAT",
+  "version": "1.0.0",
+  "description": "Responsive Feeding Practices Assessment Tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nadeesha9090/-RF-KAP--SL-Scale-.git"
+  },
+  "author": "DevNad",
+  "license": "ISC",
+  "homepage": "http://responsivefoodfeedingsrilanka.blogspot.com/"
+}
